@@ -1,0 +1,36 @@
+{
+  "name": "dicd_backend_demo",
+  "version": "1.0.0",
+  "description": "This is the demo project for db connection",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=test && node index.js",
+    "test": "lab"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.2",
+    "bunyan": "^1.8.12",
+    "cluster": "^0.7.7",
+    "config": "^1.27.0",
+    "fs": "0.0.1-security",
+    "hapi-cors-headers": "^1.0.0",
+    "hapi-swagger": "^8.0.0",
+    "inert": "^4.2.1",
+    "joi": "^11.4.0",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.10.8",
+    "mysql": "^2.17.1",
+    "os": "^0.1.1",
+    "package.json": "^2.0.1",
+    "sequelize": "^3.30.4",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "code": "^4.1.0",
+    "hapi": "^16.7.0",
+    "lab": "^14.1.0"
+  }
+}

@@ -1,0 +1,28 @@
+version : '2'
+services:
+    database_mysql:
+        image: mysql:latest
+        ports: 
+        - "3306:3306"
+        environment: 
+        - MYSQL_DATABASE=backend_demo
+        - MYSQL_ROOT_PASSWORD=Admin@123
+    
+    database_mongo:
+        image: mongo
+        ports:
+            - "27017:27017"
+        environment:
+        - MONGO_INITDB_DATABASE=backend_demo
+
+
+    app:
+        image: node-mysql-app
+        ports:
+            - "51005:51005"
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        depends_on:
+        - database_mysql
+        - database_mongo

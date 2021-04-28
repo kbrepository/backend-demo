@@ -6,6 +6,6 @@ var nodeServer = require('./node_server');
 // og("From mongo index **********************************************************************************************")
 var mongo = require('./db_connections/mongo_connection');
 nodeServer.server;
-log.info("From mongo index **********************************************************************************************")
+//log.info("From mongo index **********************************************************************************************")
 mongo.mongoConnection();
 
